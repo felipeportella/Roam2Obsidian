@@ -164,7 +164,10 @@ def run():
 
     for page in tqdm(j):
         title = page["title"]
-        created = page.get("create-time") or page["edit-time"]
+        if 'edit-time' in page.keys():
+            created = page.get('create-time', page['edit-time'])
+        else:
+            created = page.get('create-time', page['children'][0]['edit-time'])
         created = datetime.fromtimestamp(created / 1000).isoformat()[:10]
         children = page.get("children") or []
 
