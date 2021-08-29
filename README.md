@@ -1,5 +1,13 @@
 # Roam JSON To Obsidian Converter
 
+## Fixes w.r.t. repository [AnweshGangula/Roam2Obsidian](https://github.com/AnweshGangula/Roam2Obsidian):
+
+- [x] Handles broken Roam block references
+- [x] Change to the formatting of multi-line blocks
+- [ ] Fix code-blocks references: they don't seem to work with Obsidian's embed syntax
+
+---
+
 This is a forked repository from [renerocksai/rj2obs](https://github.com/renerocksai/rj2obs) with few more **additional features**:
 
 * Convert code-blocks into proper markdown code-blocks
