@@ -16,6 +16,8 @@ Your overall workflow will look something like this:
 2. Run `python downloadFirebaseAttachments.py ./md`
 3. Use Obsidian’s Markdown importer plugin to convert tags, TODOs, and highlights.
 
+Note: I do NOT recommend the “Roam Research tag fixer” option of the Markdown importer plug-in. It caused more problems for me than solved by modifying the hashes in URLs. I wanted to keep the (cosmetic) distinction between `#[[Links]]` and `[[Links]]` anyway. The only links you need to worry about are the ones you prefixed only with a `#` but not `[[`, which you can just search for manually.
+
 
 ## Fixes w.r.t. repository [AnweshGangula/Roam2Obsidian](https://github.com/AnweshGangula/Roam2Obsidian):
 
