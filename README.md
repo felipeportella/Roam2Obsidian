@@ -18,6 +18,14 @@ Your overall workflow will look something like this:
 
 Note: I do NOT recommend the “Roam Research tag fixer” option of the Markdown importer plug-in. It caused more problems for me than solved by modifying the hashes in URLs. I wanted to keep the (cosmetic) distinction between `#[[Links]]` and `[[Links]]` anyway. The only links you need to worry about are the ones you prefixed only with a `#` but not `[[`, which you can just search for manually.
 
+Some other notes:
+
+- You also have to fix links of the form `(custom text)([[Page Title]])` in Roam to the Obsidian format: `(custom text)(Page Title)` or `[[Page Title|custom text]]`. You can see all such problems by just typing `[[` into the Quick Switcher in Obsidian and seeing which such incorrectly interpreted pages come up.
+
+- You also have to fix links themselves being in page titles. That works in Roam, but not Obsidian. So for example, a page title like `The History of [[Consent]]` will not actually show as a clickable link or backlink in Obsidian. You can see such problems to by just typing `[[` in the Quick Switcher and seeing what comes up.
+
+- Remove colons, slashes, backslashes and pipe characters from all file names. Else Obsidian can’t move them around, update links, etc. You should do this renaming in Obsidian to change backlinks too, or else script carefully.
+
 
 ## Fixes w.r.t. repository [AnweshGangula/Roam2Obsidian](https://github.com/AnweshGangula/Roam2Obsidian):
 
