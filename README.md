@@ -8,7 +8,13 @@ I tried go through all the PRs and forks of the original [renerocksai/rj2obs](ht
 - Then I cherry-picked [867def9](https://github.com/lkhphuc/rj2obs/commit/867def9d90f1a83928445cf6f7400ce13dca9783) from [lkhphuc/rj2obs](https://github.com/lkhphuc/rj2obs).
 - I didn’t need to incorporate anything from [matthewwong525/rj20bs](https://github.com/matthewwong525/rj2obs/commits/main) or any of the other PRs or forks or forks of forks as of September 2021.
 
-Don’t forget to run Obsidian's Markdown importer after this conversion. It will fix #tag links and formattings (todo syntax, highlights, etc).
+I also added `downloadFirebaseAttachments.py` to download images, PDFs, and other attachments stored on Firebase by Roam to an `attachments/` subdirectory and link to them correctly in your notes.  
+
+Your overall workflow will look something like this:
+
+1. Run `python r2o.py {linkToYourExportFile.json}`
+2. Run `python downloadFirebaseAttachments.py ./md`
+3. Use Obsidian’s Markdown importer plugin to convert tags, TODOs, and highlights.
 
 
 ## Fixes w.r.t. repository [AnweshGangula/Roam2Obsidian](https://github.com/AnweshGangula/Roam2Obsidian):
